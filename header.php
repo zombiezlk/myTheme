@@ -32,7 +32,7 @@
 			<div id="top-nav">
 				<ul id="nav-item">
 					<li id="first-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">home</a></li>
-					<li><a href="<?php echo get_permalink(36);?>">project</a></li>
+					<li><a href="<?php echo get_permalink(36);?>">works</a></li>
 					<li><a href="<?php echo get_permalink(32);?>">contact</a></li>
 					<li><a href="<?php echo get_permalink(23);?>">me</a></li>
 				</ul>
