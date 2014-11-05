@@ -9,7 +9,7 @@
  get_header(); ?>
    <div id="main-content" class="main-content">
  
- 	<div id="primary" class="content-area">
+ 	<div id="primary" class="content-area single-content-area">
  
  		<?php 
  				// Start the Loop.
@@ -42,12 +42,10 @@
  
 	</div><!-- #primary -->
 
-		<?php get_sidebar(); ?>
-
 		<div id="clear"></div>
 
 </div><!-- #main-content -->
-
+		<?php get_sidebar(); ?>
 		<?php get_template_part('footer'); ?>
 
  </div><!-- #page -->
