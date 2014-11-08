@@ -56,4 +56,21 @@ function myTheme_scripts_with_jquery()
     wp_enqueue_script( 'custom-script' );
 }
 add_action( 'wp_enqueue_scripts', 'myTheme_scripts_with_jquery' );
+
+/**
+ *
+ *Register a sidebar
+ *
+ **/
+register_sidebar( array(
+	'name'          => __( 'widget-sidebar', 'myTheme' ),
+	'id'            => 'sidebar',
+	'description'   => __( 'A sidebar on the right.', 'myTheme' ),	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</aside>',
+	'before_title'  => '<h2 class="widget-title">',
+	'after_title'   => '</h2>',
+	) );
 ?>
+
+
+
