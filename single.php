@@ -26,12 +26,13 @@
  			</div>
  
  			<div class="content">
- 				<?php the_content(); ?>
+				<?php the_content(); ?>
+				<?php previous_post_link('« %link') ?> <?php next_post_link(' %link »') ?>
  			</div>
  
  			<hr></hr>
  
- 		</div>
+		</div>
  
  		<?php		// If comments are open or we have at least one comment, load up the comment template.
  				if ( comments_open() || get_comments_number() ) {
