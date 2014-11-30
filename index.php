@@ -32,7 +32,7 @@ get_header(); ?>
 			<?php endif;?>
 
 	</div><!-- #primary -->
-	
+	<?php posts_nav_link(); ?>  	
 	<?php get_sidebar(); ?>
 	<div id="clear"></div>
 
