@@ -69,8 +69,15 @@ register_sidebar( array(
 	'after_widget'  => '</aside>',
 	'before_title'  => '<h2 class="widget-title">',
 	'after_title'   => '</h2>',
-	) );
+) );
+
+
+/**
+ *
+ *Register a menu
+ *
+ **/
+register_nav_menus(array(
+	'top_menu'=>'顶部菜单'
+));
 ?>
-
-
-

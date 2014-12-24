@@ -43,24 +43,38 @@
                     					<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</a>
-						<div class="nav-collapse navbar-responsive-collapse collapse" style="height: 0px;">
-								<ul  class="nav">
-									<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">home</a></li>
-									<li><a href="<?php echo get_permalink(64);?>">works</a></li>
-									<li><a href="<?php echo get_permalink(62);?>">contact</a></li>
-									<li><a href="<?php echo get_permalink(60);?>">me</a></li>
-								</ul>
-				
-					
-								<?php get_template_part( 'searchform'); ?>	
-						</div>
-						 
+						<?php
+					          if(function_exists('wp_nav_menu')){
+							  $defalut = array(
+							  	'theme_location'  => 'top_menu',
+  								'menu'            => '',
+								'container'       => 'div',
+								'container_class' => 'nav-collapse navbar-responsive-collapse collapse',
+								'container_id'    => '',
+								'menu_class'      => 'nav menu',
+								'menu_id'         => '',
+								'echo'            => true,
+								'fallback_cb'     => 'wp_page_menu',
+								'before'          => '',
+								'after'           => '',
+								'link_before'     => '',
+								'link_after'      => '',
+								'items_wrap'      => '',
+								'depth'           => 0,
+								'walker'          => ''
+							);
+							  wp_nav_menu($default);
+							  get_template_part( 'searchform');
+						  }
+						?>
+		
+
 					</div>
-				
+
 				</div>
 
 			</div>
 
-				
-	
+
+
 
